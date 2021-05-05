@@ -1,0 +1,32 @@
+# News by tag name
+query {
+  newsByTag(name: "Cinema") {
+    id
+    newsSet {
+      id
+      title
+      description
+    }
+  }
+}
+
+# All news items
+query {
+  allNews {
+    id
+    title
+    description
+  }
+}
+
+# All news with tags
+query {
+  allNews {
+    id
+    title
+    description
+    tags {
+      name
+    }
+  }
+}
